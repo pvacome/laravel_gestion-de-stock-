@@ -1,0 +1,17 @@
+.bbb {
+    text-align: center;
+
+    .box {
+        margin: 30px auto;
+        margin-left: 50%;
+    }
+
+    .bbb {
+        opacity: 0;
+
+    }
+
+    .bbb:hover {
+        opacity: 100;
+    }
+}
