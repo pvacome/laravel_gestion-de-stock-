@@ -529,7 +529,7 @@
 
                             <div class="col-12">
 
-                                <input type="text" class="form-control" placeholder="Nom" name="name"
+                                <input type="text" class="form-control" placeholder="Metre votre nom ici" name="name"
                                     required>
                             </div>
                             <div class="col-12">

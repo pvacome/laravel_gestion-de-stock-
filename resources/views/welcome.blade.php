@@ -49,7 +49,7 @@
               <a class="nav-link" href="#">Acceuil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">A propos</a>
+              <a class="nav-link" href="#">A propos</a>
             </li>
 
             <li class="nav-item">

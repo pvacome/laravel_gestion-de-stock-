@@ -287,7 +287,7 @@
         <ul class="sidebar-nav" id="sidebar-nav">
 
             <li class="nav-item">
-                <a class="nav-link " href="{{url('dashboard')}} ">
+                <a class="nav-link " href="{{ url('dashboard') }} ">
                     <i class="bi bi-grid"></i>
                     <span>Dashboard</span>
                 </a>
@@ -389,12 +389,12 @@
                         </li>
                     @endif
                     @if (Auth::user()->hasPermission('order-read'))
-                    <li>
-                        <a href=" {{ url('order') }}">
-                            <i class="bi bi-circle"></i><span>Gerer les commandes</span>
-                        </a>
-                    </li>
-                @endif
+                        <li>
+                            <a href=" {{ url('order') }}">
+                                <i class="bi bi-circle"></i><span>Gerer les commandes</span>
+                            </a>
+                        </li>
+                    @endif
                 </ul>
 
             <li class="nav-item">
@@ -417,12 +417,12 @@
                         </li>
                     @endif
                     @if (Auth::user()->hasPermission('order-read'))
-                    <li>
-                        <a href=" {{ url('order') }}">
-                            <i class="bi bi-circle"></i><span>Gerer les commandes</span>
-                        </a>
-                    </li>
-                @endif
+                        <li>
+                            <a href=" {{ url('order') }}">
+                                <i class="bi bi-circle"></i><span>Gerer les commandes</span>
+                            </a>
+                        </li>
+                    @endif
 
                 </ul>
             </li><!-- End Forms Nav -->
@@ -510,7 +510,7 @@
                 </ol>
             </nav>
         </div><!-- End Page Title -->
-<center>
+        <center>
             <div class="col-lg-12">
 
                 <div class="card">
@@ -522,18 +522,18 @@
                             @csrf
 
                             <div class="col-12">
-                                <select  class="form-select" name="product" required>
+                                <select class="form-select" name="product" required>
                                     <option selected="selected">selectionner votre produit</option>
                                     @foreach ($product as $product)
                                         <option value=" {{ $product->id }} "> {{ $product->Name }} </option>
                                     @endforeach
                                 </select>
                             </div>
-                             <div class="col-12">
+                            <div class="col-12">
                                 <select class="form-select" name="customer" required>
                                     <option selected="selected">selectionner votre client</option>
                                     @foreach ($customer as $customer)
-                                        <option value="{{ $customer->id }}">{{$customer->name}} </option>
+                                        <option value="{{ $customer->id }}">{{ $customer->name }} </option>
                                     @endforeach
                                 </select>
                             </div>
@@ -541,28 +541,26 @@
                             <div class="col-12">
 
                                 <input type="Number" class="form-control" placeholder="Quantite" name="Quantity"
-                                 id="Quantity" onchange="prix_Total()"   required>
+                                    id="Quantity" onchange="prix_Total()" required>
                             </div>
                             <div class="col-12">
                                 <input type="Number" class="form-control" placeholder="PrixUnitaire"
                                     name="UnitPrice" id="UnitPrice" onchange="prix_Total()" required>
-                                    <script>
-                                     function prix_Total(){
-                                    let a=document.getElementById('Quantity').value;
-                                    let b=document.getElementById('UnitPrice').value;
-                                    let c=document.getElementById('TotalPrice');
+                                <script>
+                                    function prix_Total() {
+                                        let a = document.getElementById('Quantity').value;
+                                        let b = document.getElementById('UnitPrice').value;
+                                        let c = document.getElementById('TotalPrice');
 
-                                    if (a != NaN && b != NaN) {
-                                        c.value = a * b;
+                                        if (a != NaN && b != NaN) {
+                                            c.value = a * b;
+                                        }
                                     }
-
-
-                                     }
-                                    </script>
+                                </script>
                             </div>
                             <div class="col-12">
                                 <input type="Number" class="form-control" placeholder="PrixTotal" name="TotalPrice"
-                                 id="TotalPrice" onchange="prix_Total()"   required>
+                                    id="TotalPrice" onchange="prix_Total()" required>
                             </div>
 
                             <div class="text-center">
@@ -583,10 +581,10 @@
                 </div>
 
 
-        </div>
+            </div>
 
-        </div>
-    </center>
+            </div>
+        </center>
 
     </main><!-- End #main -->
 

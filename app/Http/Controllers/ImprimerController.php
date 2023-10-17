@@ -38,8 +38,7 @@ class ImprimerController extends Controller
         $this->validate($request,[
 
         ]);
-
-
+        
         $produc = Product::find($request->product);
 
         if($produc->Quantity >= $request->Quantity){

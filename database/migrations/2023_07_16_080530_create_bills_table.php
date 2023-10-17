@@ -11,11 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
+        // nous avons la fonction permettant d'enregistre les facture et les differente contraite d'integriter
         Schema::create('bills', function (Blueprint $table) {
             $table->id();
             // $table->integer('Number');
             $table->integer('Number');
             $table->date('date');
+
 
             $table->foreignId('customer')->constrained()->onDelete('cascade');
 

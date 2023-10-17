@@ -547,10 +547,8 @@
                                     let t = document.getElementById('ActualStockValue').value;
                                     let c = document.getElementById('Quantity').value;
 
-
                                 }
                             </script>
-
 
                             <div class="col-12">
 

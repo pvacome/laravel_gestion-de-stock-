@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Etiquettes;
 
 use Illuminate\Http\Request;
 
@@ -11,7 +12,8 @@ class EtiquettesController extends Controller
      */
     public function index()
     {
-        //
+        $etiquettes = Etiquettes::all();
+        return view ('Etiquettes.index',compact('etiquettes'));
     }
 
     /**

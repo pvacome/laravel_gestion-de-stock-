@@ -69,7 +69,6 @@ Route::middleware('auth')->group(function () {
     Route::resource('order',OrderController::class);
     Route::resource('vendor/laratrust/panel/roles',RoleController::class);
 
-
     Route::controller(InventoryController::class)->prefix('/inventory')->group( function(){
         Route::get('/', 'index')->middleware('permission:inventories-read');
         Route::get('/create', 'create')->middleware('permission:inventories-create');
@@ -192,19 +191,7 @@ Route::controller(OrderController::class)->prefix('/order')->group( function(){
     Route::get('/{id}', 'show')->middleware('permission:order-show');
 });
 
-
-
-
-
-
-
-
 });
-
-
-
-
-
 
 
 require __DIR__.'/auth.php';

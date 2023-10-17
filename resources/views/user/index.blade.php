@@ -305,7 +305,7 @@
                     @if (Auth::user()->hasPermission('user-read'))
                         <li>
 
-                            <a href=" {{ url('user') }} ">
+                            <a href=" {{ url('user') }}">
                                 <i class="bi bi-circle"></i><span>Gerer les utilisateurs</span>
                             </a>
                         </li>
@@ -547,7 +547,7 @@
 
                                                 <div class="col-12">
 
-                                                    <input type="text" class="form-control" placeholder="Nom" name="name"
+                                                   Nom <input type="text" class="form-control" placeholder="Mettre votre nom ici" name="name"
                                                         required>
                                                 </div>
                                                 <div class="col-12">
